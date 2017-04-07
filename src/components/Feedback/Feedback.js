@@ -17,13 +17,14 @@ function Feedback() {
       <div className={s.container}>
         <a
           className={s.link}
-          href="https://gitter.im/kriasoft/react-starter-kit"
-        >Ask a question</a>
+          href="mailto:deelring@gmail.com?Subject=Quiero%20ser%20parte"
+          target="_top"
+        >Únete</a>
         <span className={s.spacer}>|</span>
         <a
           className={s.link}
-          href="https://github.com/kriasoft/react-starter-kit/issues/new"
-        >Report an issue</a>
+          href="mailto:deelring@gmail.com?Subject=Contacto"
+        >Contáctanos</a>
       </div>
     </div>
   );

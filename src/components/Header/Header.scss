@@ -22,15 +22,26 @@ $brand-color: #61dafb;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 20px 0;
-  max-width: $max-content-width;
+    box-sizing: border-box;
+    min-height: 100%;
+    overflow: auto;
+    padding-bottom: 120px;
+    position: relative;
 }
 
 .brand {
-  color: color($brand-color lightness(+10%));
-  text-decoration: none;
-  font-size: 1.75em; /* ~28px */
+    background: #BD2D2D;
+    left: 20px;
+    height: 40px;
+    padding: 40px 30px;
+    top: -10px;
+    position: absolute;
+    z-index: 99;
+
+    img {
+      width: 218px;
+      height: 40px;
+    }
 }
 
 .brandTxt {
