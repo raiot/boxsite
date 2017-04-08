@@ -6,6 +6,6 @@ export const path = '/';
 export const action = async (state) => {
   const response = await fetch('/graphql?query={news{title,link,contentSnippet}}');
   const { data } = await response.json();
-  state.context.onSetTitle('React.js Starter Kit');
+  state.context.onSetTitle('Desde el Ring');
   return <Home news={data.news} />;
 };

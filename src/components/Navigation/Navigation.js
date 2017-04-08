@@ -21,9 +21,10 @@ const sections = [
 
 function Navigation() {
   let nav = [];
-  sections.forEach((section) => {
+  sections.forEach((section, index) => {
     const route = `${section.split(' ').join('-')}`;
-    nav.push(<li><Link className={s.Link} to={route}>{section.toUpperCase()}</Link></li>);
+    nav.push(<li key={`react=app=nav-box${index}`}>
+    <Link className={s.Link} to={route}>{section.toUpperCase()}</Link></li>);
   });
   return (
     <ul className={s.nav} role="navigation">

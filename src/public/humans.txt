@@ -3,11 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Rene Durazo -- WebDev/Partner -- @rene_du
+    Brenda Bonilla -- News/Reporter --@LaBonilla_
 
 # THANKS
 
-    <name>
+    To my wife, Karla Tonella
 
 # TECHNOLOGY COLOPHON
 

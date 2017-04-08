@@ -9,19 +9,27 @@ function SocialBar() {
     {
       name: 'Twitter',
       url: 'http://twitter.com/desdeelring',
+      className: 'tw',
     },
     {
       name: 'Facebook',
       url: 'http://fb.com/desderingside',
+      className: 'fb',
     },
     {
       name: 'Instagram',
       url: 'http://instagram.com/desdeelring',
+      className: 'in',
     },
-  ].forEach((socialMedia) => {
+  ].forEach((socialMedia, index) => {
     media.push(
-            <Link to={socialMedia.url} title={socialMedia.name} title={socialMedia.name}>
-                <i className={`icon-${socialMedia.name.toLocaleLowerCase()}`} />
+            <Link key={`react=app=box${index}`}
+              target="_blank"
+              to={socialMedia.url}
+              title={socialMedia.name}
+              className={s[socialMedia.className]}
+            >
+                <i className={`fa fa-${socialMedia.name.toLocaleLowerCase()}`} aria-hidden="true" />
             </Link>
         );
   });

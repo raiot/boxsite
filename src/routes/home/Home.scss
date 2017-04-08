@@ -15,17 +15,26 @@
   padding: 0;
 }
 
+.author {
+  margin-bottom: 5px;
+}
+
+.newsContainer {
+  max-width: 600px;
+}
+
 .newsItem {
   list-style-type: none;
-  padding-bottom: 6px;
+  padding-bottom: 50px;
 }
 
 .title {
   text-align: center;
+  font-weight: 700;
 }
 
 .newsTitle {
-  font-size: 1.125em;
+  font-size: 2.125em;
 }
 
 .newsTitle, .newsDesc {

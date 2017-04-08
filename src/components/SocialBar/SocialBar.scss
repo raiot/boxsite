@@ -6,4 +6,26 @@
     right: 0;
     top: 50%;
     z-index: 199;
+
+    a {
+        color: white;
+        display: block;
+        height: 1.5em;
+        padding: 0.5em;
+        text-align: center;
+        text-decoration: none;
+        width: 1.5em;
+    }
+}
+
+.tw {
+    background: #00ACED;
+}
+
+.fb {
+    background: #3B5998;
+}
+
+.in {
+    background: #517FA4;
 }
