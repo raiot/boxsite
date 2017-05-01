@@ -4,6 +4,8 @@ import s from './Home.scss';
 import DateUtils from '../../utils/DateUtils';
 
 function Home({ news }) {
+  console.info(typeof news);
+  console.info(news);
   return (
     <div className={s.root}>
       <div className={s.container}>
@@ -14,7 +16,7 @@ function Home({ news }) {
                 <a href={item.link} className={s.newsTitle}>{item.title}</a>
                 <div className={s.author}>
                   <small>{item.author}</small>&nbsp;|&nbsp;
-                  <small>{DateUtils.customFormat(item.date)}</small>
+                  <small>{DateUtils.customFormat(item.created)}</small>
                 </div>
                 <img title={item.title} src={item.img} />
                 <span
