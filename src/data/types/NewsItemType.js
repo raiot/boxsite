@@ -10,7 +10,7 @@ const NewsItemType = new ObjectType({
     title: { type: new NonNull(StringType) },
     img: { type: StringType },
     author: { type: StringType },
-    created: { type: new NonNull(StringType) },
+    created: { type: StringType },
     contentSnippet: { type: StringType },
   },
 });

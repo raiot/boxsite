@@ -21,8 +21,8 @@ const news = {
       lastFetchTask = fetch(url)
         .then(response => response.json())
         .then(data => {
-          if (data && data.news) {
-            items = data.news;
+          if (data) {
+            items = data;
           }
 
           return items;

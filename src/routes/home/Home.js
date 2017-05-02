@@ -4,8 +4,6 @@ import s from './Home.scss';
 import DateUtils from '../../utils/DateUtils';
 
 function Home({ news }) {
-  console.info(typeof news);
-  console.info(news);
   return (
     <div className={s.root}>
       <div className={s.container}>
